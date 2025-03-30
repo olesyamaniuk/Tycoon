@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
-  const navListRef = document.querySelector(".business-navigation-list");
-  const headerRef = document.querySelector(".business-header");
-  const navigationRef = document.querySelector(".business-navigation");
+  const navListRef = document.querySelector(".tycoon-navigation-list");
+  const headerRef = document.querySelector(".tycoon-header");
+  const navigationRef = document.querySelector(".tycoon-navigation");
 
   menuBtnRef.addEventListener("click", () => {
     menuBtnRef.classList.toggle("is-open");
@@ -23,14 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function toggleAnswer(element) {
   const answer = element.nextElementSibling;
-  const buttonImg = element.querySelector(".business-toggle-button img");
+  const buttonImg = element.querySelector(".tycoon-toggle-button img");
 
   if (answer.style.display === "none" || answer.style.display === "") {
     answer.style.display = "block";
-    buttonImg.src = "/img/Component 1 (10).png";
+    buttonImg.src = "/img/Component 2 (2).png";
   } else {
     answer.style.display = "none";
-    buttonImg.src = "/img/Component 1 (8).png";
+    buttonImg.src = "/img/Component 2 (1).png";
   }
 }
 

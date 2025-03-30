@@ -1,5 +1,5 @@
 $(function () {
-  $(".business-gallery-list").slick({
+  $(".tycoon-gallery-list").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -10,13 +10,13 @@ $(function () {
     dots: true,
     centerMode: true,
     cssEase: "linear",
-    prevArrow: ".business-gallery-list-left",
-    nextArrow: ".business-gallery-list-right",
+    prevArrow: ".tycoon-gallery-list-left",
+    nextArrow: ".tycoon-gallery-list-right",
   });
 });
 
 $(function () {
-  $(".business-reviews-list").slick({
+  $(".tycoon-reviews-list").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -27,12 +27,12 @@ $(function () {
     dots: true,
     centerMode: true,
     cssEase: "linear",
-    prevArrow: ".business-reviews-list-left",
-    nextArrow: ".business-reviews-list-right",
+    prevArrow: ".tycoon-reviews-list-left",
+    nextArrow: ".tycoon-reviews-list-right",
   });
 });
 $(function () {
-  $(".business-why-list").slick({
+  $(".tycoon-why-list").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -43,7 +43,7 @@ $(function () {
     dots: true,
     centerMode: true,
     cssEase: "linear",
-    prevArrow: ".business-why-list-left",
-    nextArrow: ".business-why-list-right",
+    prevArrow: ".tycoon-why-list-left",
+    nextArrow: ".tycoon-why-list-right",
   });
 });

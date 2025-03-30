@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   -webkit-box-sizing: border-box;
@@ -7,9 +7,9 @@
 
 html {
   scroll-behavior: smooth;
-  background: rgba(253, 247, 232, 1);
-  color: rgba(68, 20, 6, 1);
-  font-family: "Baloo 2", sans-serif;
+  background: rgba(247, 247, 247, 1);
+
+  color: rgba(6, 39, 101, 1);
 }
 
 body {
@@ -51,17 +51,17 @@ a {
   scale: 120%;
 }
 
-.business-header.is-open .business-header-background {
+.tycoon-header.is-open .tycoon-header-background {
   left: 0;
 }
-.business-header-button-wrapper {
+.tycoon-header-button-wrapper {
   margin-left: auto;
 }
-.business-header-icon {
+.tycoon-header-icon {
   display: none;
 }
 
-.business-header-icon-button {
+.tycoon-header-icon-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,22 +69,22 @@ a {
   border: none;
   border-radius: 50%;
 }
-.business-navigation-list.is-open {
+.tycoon-navigation-list.is-open {
   right: 0;
 }
-.business-header-icon-menu {
+.tycoon-header-icon-menu {
   display: block;
 }
 
-.business-header-icon-button.is-open .business-header-icon-menu {
+.tycoon-header-icon-button.is-open .tycoon-header-icon-menu {
   display: none;
 }
 
-.business-header-icon-button.is-open .business-header-icon-close {
+.tycoon-header-icon-button.is-open .tycoon-header-icon-close {
   display: block;
 }
 
-.business-header {
+.tycoon-header {
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -92,10 +92,10 @@ a {
   background: transparent;
   display: flex;
   height: 76px;
-  background: rgba(234, 167, 53, 1);
+  background: rgba(235, 247, 255, 0.8);
 }
 
-.business-header-background {
+.tycoon-header-background {
   position: absolute;
   top: 0;
   right: 0;
@@ -103,31 +103,32 @@ a {
   left: 100%;
   z-index: -1;
   transition: left 0.3s ease;
-  background: rgba(234, 167, 53, 1);
+  background: rgba(235, 247, 255, 0.8);
+  backdrop-filter: blur(50px);
 }
-.business-header.is-open .business-header-background {
+.tycoon-header.is-open .tycoon-header-background {
   left: 0;
 }
-.business-header-button-wrapper {
+.tycoon-header-button-wrapper {
   margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.business-header-icon-menu {
+.tycoon-header-icon-menu {
   display: block;
 }
 
-.business-header-icon-button.is-open .business-header-icon-menu {
+.tycoon-header-icon-button.is-open .tycoon-header-icon-menu {
   display: none;
 }
 
-.business-header-icon-button.is-open .business-header-icon-close {
+.tycoon-header-icon-button.is-open .tycoon-header-icon-close {
   display: block;
 }
 
-.business-navigation {
+.tycoon-navigation {
   display: -ms-flexbox;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -143,7 +144,7 @@ a {
   position: relative;
 }
 
-.business-navigation-list {
+.tycoon-navigation-list {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -157,18 +158,16 @@ a {
   padding: 0 16px;
 
   gap: 12px;
-  background: rgba(234, 167, 53, 1);
+  background: rgba(235, 247, 255, 0.8);
+  backdrop-filter: blur(50px);
 }
-.business-title-img {
-  width: 144px;
-  height: 24px;
-}
-.business-navigation-list.is-open {
+
+.tycoon-navigation-list.is-open {
   right: 0;
 }
 
-.business-navigation-link {
-  font-family: Poppins;
+.tycoon-navigation-link {
+  font-family: Inter;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
@@ -177,36 +176,40 @@ a {
 
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: rgba(253, 247, 232, 1);
+  color: rgba(6, 39, 101, 1);
 }
 
-.business-navigation-link:hover,
-.business-navigatioт-link:focus {
-  color: rgba(68, 20, 6, 1);
+.tycoon-navigation-link:hover,
+.tycoon-navigatioт-link:focus {
+  color: rgba(123, 211, 74, 1);
 }
 
-.business-header.is-open {
+.tycoon-header.is-open {
   background-color: transparent;
 }
 
-.business-navigation-img {
+.tycoon-navigation-img {
   display: none;
 }
-
+.tycoon-title-img {
+  width: 285px;
+  height: 24px;
+}
 @media screen and (min-width: 1200px) {
-  .business-navigation-img {
+  .tycoon-navigation-img {
     display: flex;
-    width: 232px;
-    height: 40px;
-    margin-right: 120px;
+    width: 278px;
+    height: 72px;
+
+    margin-right: 110px;
   }
-  .business-policy-terms-header-icon-menu {
+  .tycoon-policy-terms-header-icon-menu {
     display: none;
   }
 
-  .business-header {
+  .tycoon-header {
     width: 100%;
-    height: 88px;
+    height: 120px;
     padding: 10px 0px 10px 20px;
     display: flex;
     align-items: center;
@@ -214,12 +217,12 @@ a {
     z-index: 1000;
   }
 
-  .business-header-background {
+  .tycoon-header-background {
   }
-  .business-header-icon-button {
+  .tycoon-header-icon-button {
     display: none;
   }
-  .business-navigation {
+  .tycoon-navigation {
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -228,7 +231,7 @@ a {
     margin: auto;
   }
 
-  .business-navigation-list {
+  .tycoon-navigation-list {
     background-color: transparent;
     flex-direction: row;
     display: flex;
@@ -245,144 +248,149 @@ a {
     justify-content: center;
   }
 
-  .business-navigation-link {
-    font-family: Poppins;
+  .tycoon-navigation-link {
+    font-family: Inter;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
-    letter-spacing: -3%;
+    letter-spacing: -1px;
 
     padding: 0px 10px;
     text-decoration: none;
   }
 
-  .business-navigation-item-desk {
+  .tycoon-navigation-item-desk {
     display: none;
   }
 }
-.business-home {
+.tycoon-home {
   width: 375px;
-  height: 661px;
-  padding: 108px 16px 0px;
+  height: 598px;
+  padding: 119px 32px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/home/Frame\ 40053.png");
+  background-image: url("/img/home/Frame\ 40070.png");
   margin: auto;
 }
 
-.business-home-container-top {
+.tycoon-home-container-top {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgba(253, 247, 232, 1);
 }
 
-.business-home-title {
-  font-family: Baloo 2;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.business-home-text {
-  font-family: Baloo 2;
+.tycoon-home-title {
+  font-family: Inter;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 130%;
   letter-spacing: 0%;
-  padding: 16px 0 218px;
 }
 
-.business-home-google-button-image {
+.tycoon-home-text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+
+  padding: 16px 0 0px;
+}
+
+.tycoon-home-google-button-image {
   width: 375px;
   height: 175px;
 }
 
-.business-home-google-button-link:hover .business-home-google-button-image {
+.tycoon-home-google-button-link:hover .tycoon-home-google-button-image {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
 
 @media screen and (min-width: 1200px) {
-  .business-home {
+  .tycoon-home {
     width: 1440px;
-    height: 840px;
-    padding: 149px 72px 0px;
-    background-image: url("/img/home/Frame\ 40054.png");
+    height: 920px;
+    padding: 206px 622px 0px 96px;
+    background-image: url("/img/home/Frame\ 40071.png");
   }
 
-  .business-home-container-top {
+  .tycoon-home-container-top {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
   }
 
-  .business-home-title {
-    font-family: Baloo 2;
-    font-weight: 700;
+  .tycoon-home-title {
+    font-family: Inter;
+    font-weight: 500;
     font-size: 56px;
-    line-height: 100%;
+    line-height: 130%;
     letter-spacing: 0%;
-    text-align: center;
-    text-transform: uppercase;
+    padding-right: 60px;
   }
 
-  .business-home-text {
-    font-family: Baloo 2;
-    font-weight: 500;
+  .tycoon-home-text {
+    font-family: Inter;
+    font-weight: 400;
     font-size: 24px;
     line-height: 130%;
     letter-spacing: 0%;
-    width: 636px;
-    padding: 62px 0 100px;
+
+    padding: 32px 0 0px;
+  }
+  .tycoon-home-google-button-image {
+    width: 375px;
+    height: 175px;
+    margin-top: -20px;
+    margin-left: -16px;
   }
 }
-.business-why {
+.tycoon-why {
   width: 375px;
 
   margin: auto;
-  padding: 80px 16px 0;
+  padding: 56px 16px 0;
 }
 
-.business-why-list {
-  padding-top: 40px;
+.tycoon-why-list {
+  padding-top: 48px;
   padding-bottom: 32px;
 }
-.business-why-lists {
+.tycoon-why-lists {
   display: none;
 }
 
-.business-why-item {
+.tycoon-why-item {
   margin: 0 5px;
   width: 343px;
-  height: 128px;
-  border-radius: 30px;
+  height: 105px;
+  background: rgba(231, 231, 231, 1);
+
   padding: 16px;
-  background: rgba(220, 237, 169, 1);
+  border-radius: 16px;
+
   transition: all 0.3s ease-in-out;
-  border: 1px solid transparent;
 }
-.business-why-item:hover {
-  background: rgba(230, 243, 192, 1);
-  border: 1px solid rgba(147, 183, 35, 1);
+.tycoon-why-item:hover {
+  box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.1);
 }
-.business-why-text-bold {
-  font-family: Baloo 2;
-  font-weight: 500;
-  font-size: 24px;
-
-  vertical-align: middle;
+.tycoon-why-text-bold {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
 }
 
-.business-why-text {
-  font-family: Baloo 2;
+.tycoon-why-text {
+  font-family: Inter;
   font-weight: 400;
   font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
 
   padding-top: 8px;
 }
@@ -414,371 +422,372 @@ a {
   background: url("/img/1.png") no-repeat center/cover;
 }
 @media screen and (min-width: 1200px) {
-  .business-why {
+  .tycoon-why {
     width: 1440px;
     padding: 120px 72px 0;
   }
-  .business-why-list {
+  .tycoon-why-list {
     display: none;
   }
-  .business-why-lists {
+  .tycoon-why-lists {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 24px;
-    padding-top: 56px;
+    margin-top: 56px;
+    gap: 24px;
+    border-radius: 48px;
+    padding: 32px;
+    background: rgba(242, 242, 242, 1);
   }
 
-  .business-why-item {
+  .tycoon-why-item {
     margin: 0;
-    width: 416px;
-    height: 270px;
-    border-radius: 40px;
-    padding: 24px 40px 24px;
+    width: 1232px;
+    height: 129px;
+    border-radius: 16px;
+    padding: 24px;
   }
 
-  .business-why-text-bold {
-    font-family: Baloo 2;
+  .tycoon-why-text-bold {
+    font-family: Inter;
     font-weight: 500;
     font-size: 32px;
-
-    height: 100px;
-    display: flex;
-    align-items: center;
+    line-height: 130%;
+    letter-spacing: 0%;
   }
 
-  .business-why-text {
-    font-family: Baloo 2;
+  .tycoon-why-text {
+    font-family: Inter;
     font-weight: 400;
     font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
 
     padding-top: 8px;
   }
 }
 
-.business-about {
-  padding: 10px 16px 0px;
+.tycoon-about {
+  padding: 80px 16px 0px;
   margin: auto;
-  margin-top: 70px;
   width: 375px;
-  height: 601px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/Frame\ 40053.png");
 }
 
-.business-about-title {
-  font-family: Baloo 2;
+.tycoon-about-title {
+  font-family: Inter;
   font-weight: 600;
   font-size: 40px;
-
+  line-height: 130%;
+  letter-spacing: 0%;
   text-align: center;
 }
-
-.business-about-text {
-  font-family: Baloo 2;
+.tycoon-about-img {
+  padding-top: 20px;
+  margin-left: -16px;
+}
+.tycoon-about-text {
+  font-family: Inter;
   font-weight: 400;
   font-size: 14px;
-
-  padding: 146px 14px 0;
+  line-height: 130%;
+  letter-spacing: 0%;
 }
 
 @media screen and (min-width: 1200px) {
-  .business-about {
-    padding: 50px 426px 0;
-    margin-top: 80px;
+  .tycoon-about {
+    padding: 120px 237px 0;
     width: 1440px;
-    height: 907px;
-    background-image: url("/img/Frame\ 40055\ \(1\).png");
   }
-  .business-about-title {
-    font-family: Baloo 2;
+  .tycoon-about-title {
+    font-family: Inter;
     font-weight: 600;
     font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
   }
-
-  .business-about-text {
-    font-family: Baloo 2;
+  .tycoon-about-img {
+    padding-top: 20px;
+    margin-left: -34px;
+    content: url("/img/Frame\ 40028\ \(1\).png");
+  }
+  .tycoon-about-text {
+    font-family: Inter;
     font-weight: 400;
     font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
 
-    padding: 206px 0px 0;
+    padding: 10px 0px 0;
   }
 }
-.business-how {
+.tycoon-how {
   width: 375px;
-  height: 404px;
+  height: 292px;
   margin: auto;
-  padding: 64px 16px;
+  margin-top: 80px;
+  padding: 0px 16px;
   background-repeat: no-repeat;
 
-  background-image: url("/img/Frame\ 40056.png");
+  background-image: url("/img/Frame\ 40072.png");
 }
 
-.business-how-list {
+.tycoon-how-list {
   display: none;
 }
 
-.business-how-item {
+.tycoon-how-item {
   width: 343px;
-  height: 122px;
-  border-radius: 30px;
+  height: 105px;
+  background: rgba(242, 242, 242, 1);
+  border-radius: 16px;
   padding: 16px;
-  border-width: 3px;
-  background: rgba(253, 237, 197, 1);
-  border: 3px solid rgba(42, 154, 176, 1);
+  border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
 }
-.business-how-item:hover {
-  background: rgba(255, 243, 214, 1);
-  border: 3px solid rgba(180, 230, 237, 1);
+.tycoon-how-item:hover {
+  border: 1px solid rgba(7, 146, 255, 1);
 }
-.business-how-text-bold {
-  font-family: Baloo 2;
-  font-weight: 700;
+.tycoon-how-text-bold {
+  font-family: Inter;
+  font-weight: 600;
   font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
 }
 
-.business-how-text {
-  font-family: Baloo 2;
+.tycoon-how-text {
+  font-family: Inter;
   font-weight: 400;
-  font-size: 18px;
-  padding-top: 6px;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: right;
+
+  padding-top: 8px;
 }
 
 @media screen and (min-width: 1200px) {
-  .business-how {
+  .tycoon-how {
     width: 1440px;
-    height: 977px;
-    padding: px;
-    background-image: url("/img/Frame\ 40053\ \(1\).png");
+    height: 548px;
+    margin-top: 73px;
+    padding: 47px 72px 0px;
+    background-image: url("/img/Frame\ 40073.png");
   }
-  .business-how-list {
+  .tycoon-how-list {
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
+    padding-top: 56px;
+    gap: 24px;
   }
 
-  .business-how-item {
-    width: 306px;
-    height: 176px;
-    border-radius: 40px;
+  .tycoon-how-item {
+    width: 416px;
+    height: 141px;
+    border-radius: 16px;
     padding: 24px;
-    border-width: 3px;
-
-    position: absolute;
-    top: 167px;
-    left: 72px;
   }
-  .business-how-item-q {
-    top: 255px;
-    left: 557px;
+  .tycoon-how-text-bold {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
   }
-  .business-how-item-w {
-    top: 176px;
-    left: 1062px;
-  }
-  .business-how-item-e {
-    top: 544px;
-    left: 222px;
-  }
-  .business-how-item-r {
-    top: 515px;
-    left: 816px;
-  }
-  .business-how-text-bold {
-    font-family: Baloo 2;
-    font-weight: 700;
-    font-size: 18px;
-  }
-
-  .business-how-text {
-    font-family: Baloo 2;
+  .tycoon-how-text {
+    font-family: Inter;
     font-weight: 400;
     font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: right;
 
     padding-top: 16px;
   }
 }
 
-.business-reviews {
+.tycoon-reviews {
   width: 375px;
   margin: auto;
   padding: 80px 16px 0;
 }
 
-.business-reviews-list {
-  padding: 25px 0 37px;
+.tycoon-reviews-list {
+  padding: 48px 0 32px;
 }
 
-.business-reviews-item {
+.tycoon-reviews-item {
   margin: 5px;
   width: 343px;
-  height: 140px;
-  border-radius: 30px;
+  height: 109px;
+
+  border-radius: 16px;
   padding: 16px;
-  background: rgba(180, 230, 237, 1);
+  background: rgba(235, 247, 255, 1);
+
   transition: all 0.3s ease-in-out;
 }
-.business-reviews-item:hover {
-  background: rgba(189, 237, 244, 1);
-  box-shadow: 4px 4px 35px 0px rgba(226, 126, 27, 0.2);
-}
-.business-reviews-item-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.tycoon-reviews-item:hover {
 }
 
-.business-reviews-text-bold {
-  font-family: Baloo 2;
-  font-weight: 500;
+.tycoon-reviews-text-bold {
+  font-family: Inter;
+  font-weight: 600;
   font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
 }
-.business-reviews-text-bold-two {
-  display: flex;
-  align-self: center;
-  gap: 8px;
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 18px;
-}
-.business-reviews-text {
-  font-family: Poppins;
+
+.tycoon-reviews-text {
+  font-family: Inter;
   font-weight: 400;
   font-size: 16px;
-  padding-top: 8px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  padding-top: 12px;
 }
 
 @media screen and (min-width: 1200px) {
-  .business-reviews {
+  .tycoon-reviews {
     width: 1440px;
 
     padding: 120px 72px 0;
   }
-  .business-reviews-list {
-    padding: 40px 0 20px;
+  .tycoon-reviews-list {
+    padding: 56px 0;
   }
 
-  .business-reviews-item {
-    margin: 20px 12px;
-    width: 416px;
-    height: 183px;
-    border-radius: 40px;
+  .tycoon-reviews-item {
+    margin: 0 12px;
+    width: 526px;
+    height: 153px;
+    border-radius: 16px;
     padding: 24px;
   }
 
-  .business-reviews-item-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .business-reviews-text-bold {
-    font-family: Baloo 2;
-    font-weight: 500;
+  .tycoon-reviews-text-bold {
+    font-family: Inter;
+    font-weight: 600;
     font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
   }
 
-  .business-reviews-text {
-    font-family: Poppins;
+  .tycoon-reviews-text {
+    font-family: Inter;
     font-weight: 400;
-    font-size: 18px;
-    padding-top: 16px;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+
+    padding-top: 12px;
   }
 }
 
-.business-faq {
-  padding: 60px 16px 0px;
+.tycoon-faq {
+  padding: 70px 16px 0px;
   margin: auto;
   width: 375px;
 }
 
-.business-faq-container {
-  padding-top: 40px;
+.tycoon-faq-container {
+  padding-top: 48px;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.business-faq-item {
-  background: rgba(196, 224, 118, 1);
-  border-radius: 30px;
+.tycoon-faq-item {
+  background: rgba(209, 238, 255, 1);
+
+  border-radius: 16px;
   padding: 16px;
 }
 
-.business-faq-question {
+.tycoon-faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Baloo 2;
+  font-family: Inter;
   font-weight: 500;
   font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
 }
 
-.business-toggle-button {
+.tycoon-toggle-button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.business-faq-answer {
+.tycoon-faq-answer {
   display: none;
-  padding-top: 8px;
-  font-family: Baloo 2;
+  padding-top: 12px;
+  font-family: Inter;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 0%;
 }
 
 @media screen and (min-width: 1200px) {
-  .business-faq {
-    padding: 0 72px 0;
+  .tycoon-faq {
+    padding: 62px 72px 0;
     width: 1440px;
   }
-  .business-faq-container {
+  .tycoon-faq-container {
     padding-top: 56px;
     display: flex;
     flex-direction: column;
     gap: 24px;
   }
 
-  .business-faq-item {
-    background: rgba(196, 224, 118, 1);
-    border-radius: 40px;
-    padding: 16px 24px;
+  .tycoon-faq-item {
+    border-radius: 16px;
+    padding: 24px;
   }
 
-  .business-faq-question {
-    font-family: Baloo 2;
+  .tycoon-faq-question {
+    font-family: Inter;
     font-weight: 500;
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
   }
 
-  .business-faq-answer {
-    font-family: Baloo 2;
+  .tycoon-faq-answer {
+    font-family: Inter;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0%;
   }
 }
-.business-gallery {
+.tycoon-gallery {
   width: 375px;
   margin: auto;
-  padding: 80px 16px 110px;
+  padding: 80px 16px 120px;
 }
 
-.business-gallery-list {
-  padding: 40px 0 32px;
+.tycoon-gallery-list {
+  padding: 48px 0 32px;
 }
 
-.business-gallery-item {
+.tycoon-gallery-item {
   width: 253px;
-  height: 450px;
+  height: 405xp;
 
   overflow: hidden;
   position: relative;
   margin: 0 8px;
 }
-
-.business-gallery-image {
+.tycoon-gallery-item-two {
+  width: 253px;
+  height: 405xp;
+}
+.tycoon-gallery-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -786,112 +795,107 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .business-gallery {
+  .tycoon-gallery {
     width: 1440px;
 
     padding: 120px 72px 130px;
   }
 
-  .business-gallery-item {
-    width: 416px;
-    height: 740px;
+  .tycoon-gallery-item {
+    width: 526px;
+    height: 842px;
 
     margin: 0 12px;
   }
 
-  .business-gallery-list {
+  .tycoon-gallery-list {
     padding: 56px 0 40px;
   }
 }
 
-.business-features {
+.tycoon-features {
   width: 375px;
   margin: auto;
   padding: 80px 16px 0px;
 }
 
-.business-features-list {
+.tycoon-features-list {
   display: none;
 }
 
-.business-features-item {
-  background-image: url("/img/features/feature\ card\ 1.png");
-  width: 256px;
-  height: 304px;
-  padding: 32px 16px;
+.tycoon-features-item {
+  width: 343px;
+  height: 165px;
+  background: rgba(235, 247, 255, 1);
   transition: all 0.3s ease-in-out;
-  border-radius: 32px;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid transparent;
 }
-.business-features-item:hover {
-  box-shadow: 4px 4px 35px 0px rgba(226, 126, 27, 0.2);
-}
-.business-features-img {
-  margin-left: 153px;
-  width: 64px;
-  height: 64px;
+.tycoon-features-item:hover {
+  border: 1px solid rgba(7, 146, 255, 1);
 }
 
-.business-features-text-bold {
-  font-family: Baloo 2;
+.tycoon-features-text-bold {
+  font-family: Inter;
   font-weight: 500;
-  font-size: 18px;
-  height: 56px;
-  margin: 16px 0 8px;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  height: 62px;
 }
 
-.business-features-text {
-  font-family: Baloo 2;
+.tycoon-features-text {
+  font-family: Inter;
   font-weight: 400;
   font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  padding-top: 8px;
 }
 
 @media screen and (min-width: 1200px) {
-  .business-features {
+  .tycoon-features {
     width: 1440px;
     padding: 120px 72px 0;
   }
-  .business-features-list {
+  .tycoon-features-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding-top: 56px;
     gap: 24px;
   }
 
-  .business-features-item {
-    background-image: url("/img/features/feature\ card\ 2.png");
-    width: 306px;
-    height: 365px;
-    padding-top: 40px;
-    padding-right: 24px;
-    padding-bottom: 40px;
-    padding-left: 24px;
-    border-width: 12px;
+  .tycoon-features-item {
+    width: 416px;
+    height: 133px;
+    border-radius: 16px;
+    padding: 24px;
   }
 
-  .business-features-img {
-    margin-left: 180px;
-    width: 80px;
-    height: 80px;
-  }
-
-  .business-features-text-bold {
-    font-family: Baloo 2;
+  .tycoon-features-text-bold {
+    font-family: Inter;
     font-weight: 500;
     font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
 
-    height: 76px;
-    margin: 24px 0 8px;
+    height: auto;
   }
 
-  .business-features-text {
-    font-family: Baloo 2;
+  .tycoon-features-text {
+    font-family: Inter;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
   }
 }
 
-.business-policy-terms-container {
+.tycoon-policy-terms-container {
   padding: 116px 16px 40px;
   width: 375px;
   margin: auto;
@@ -902,16 +906,16 @@ a {
   letter-spacing: 0%;
 }
 
-.business-policy-terms-title {
-  font-family: Baloo 2;
+.tycoon-policy-terms-title {
+  font-family: Poppins;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 150%;
   letter-spacing: 0%;
   text-align: center;
 }
 
-.business-policy-terms-text {
+.tycoon-policy-terms-text {
   padding-top: 20px;
   font-family: Poppins;
   font-weight: 600;
@@ -920,38 +924,38 @@ a {
   letter-spacing: 0%;
 }
 
-.business-policy-terms-texts {
+.tycoon-policy-terms-texts {
   padding-top: 8px;
 }
 
-.business-policy-terms-text-one {
+.tycoon-policy-terms-text-one {
   padding-top: 20px;
 }
 
-.business-terms-list {
+.tycoon-terms-list {
   list-style-type: disc;
   padding: 20px 0 20px 25px;
   display: flex;
   flex-direction: column;
 }
 
-.business-terms-lists {
+.tycoon-terms-lists {
   list-style-type: disc;
   padding-left: 25px;
 }
 
-.business-email-link {
+.tycoon-email-link {
   color: inherit;
   text-decoration: none;
 }
 
-.business-email-link-color {
+.tycoon-email-link-color {
   color: inherit;
   text-decoration: none;
 }
 
 @media screen and (min-width: 1200px) {
-  .business-policy-terms-container {
+  .tycoon-policy-terms-container {
     padding: 183px 72px 60px;
     width: 1440px;
     font-family: Poppins;
@@ -961,16 +965,16 @@ a {
     letter-spacing: 0%;
   }
 
-  .business-policy-terms-title {
-    font-family: Baloo 2;
+  .tycoon-policy-terms-title {
+    font-family: Poppins;
     font-weight: 700;
     font-size: 48px;
-    line-height: 130%;
+    line-height: 150%;
     letter-spacing: 0%;
     text-align: center;
   }
 
-  .business-policy-terms-text {
+  .tycoon-policy-terms-text {
     font-family: Poppins;
     font-weight: 600;
     font-size: 24px;
@@ -980,24 +984,24 @@ a {
     padding-top: 40px;
   }
 
-  .business-policy-terms-text-one {
+  .tycoon-policy-terms-text-one {
     padding-top: 30px;
   }
 
-  .business-terms-list {
+  .tycoon-terms-list {
     padding: 20px 0 20px 25px;
   }
 }
-.business-footer {
+.tycoon-footer {
   width: 375px;
   margin: auto;
-  color: #ffffff;
-  background: rgba(234, 167, 53, 1);
+  color: rgba(6, 39, 101, 1);
+  background: rgba(235, 247, 255, 0.8);
 
   padding: 32px;
 }
 
-.business-footer-container {
+.tycoon-footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1005,7 +1009,7 @@ a {
   gap: 8px;
 }
 
-.business-footer-wrapper {
+.tycoon-footer-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1014,24 +1018,17 @@ a {
   gap: 12px;
 }
 
-.business-footer-text {
-  font-family: Poppins;
+.tycoon-footer-text {
+  font-family: Inter;
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
-  letter-spacing: 0%;
-  vertical-align: middle;
-  text-decoration: underline;
-  text-decoration-style: solid;
-  text-decoration-offset: 0%;
-  text-decoration-thickness: 0%;
-  text-decoration-skip-ink: auto;
 
-  color: #ffffff;
+  color: rgba(6, 39, 101, 1);
 }
 
-.business-footer-copyright {
-  font-family: Poppins;
+.tycoon-footer-copyright {
+  font-family: Inter;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -1040,17 +1037,17 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .business-footer {
+  .tycoon-footer {
     width: 1440px;
     padding: 24px;
   }
 
-  .business-footer-container {
+  .tycoon-footer-container {
     gap: 16px;
   }
 
-  .business-footer-text {
-    font-family: Poppins;
+  .tycoon-footer-text {
+    font-family: Inter;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -1062,8 +1059,8 @@ a {
     text-decoration-skip-ink: auto;
   }
 
-  .business-footer-copyright {
-    font-family: Poppins;
+  .tycoon-footer-copyright {
+    font-family: Inter;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
@@ -1072,29 +1069,29 @@ a {
   }
 }
 
-.business-cookie-popup {
+.tycoon-cookie-popup {
   position: fixed;
   bottom: 10px;
   width: 375px;
-  padding: 30px;
+  padding: 16px 20px;
   border-radius: 24px;
-  background: rgba(220, 237, 169, 1);
+  background: rgba(137, 203, 255, 1);
 
   z-index: 1000;
   display: none;
 }
 
-.business-cookie-popup-text-two {
+.tycoon-cookie-popup-text-two {
   font-family: Poppins;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   letter-spacing: 0%;
 
-  color: rgba(68, 20, 6, 1);
+  color: rgba(6, 39, 101, 1);
 }
 
-.business-cookie-button-container {
+.tycoon-cookie-button-container {
   padding: 0px 0 0;
   margin: auto;
   display: flex;
@@ -1104,10 +1101,10 @@ a {
   gap: 16px;
 }
 
-.business-cookie-button {
+.tycoon-cookie-button {
   border: none;
   background-color: transparent;
-  border: 1px solid rgba(104, 202, 217, 1);
+  border: 1px solid rgba(224, 247, 208, 1);
   width: 133px;
 
   padding-top: 11px;
@@ -1119,22 +1116,22 @@ a {
   line-height: 150%;
   letter-spacing: 0%;
   vertical-align: middle;
-  color: rgba(68, 20, 6, 1);
+  color: rgba(6, 39, 101, 1);
   border-radius: 14px;
 }
 
 #accept-cookies {
-  background: rgba(104, 202, 217, 1);
+  background: rgba(224, 247, 208, 1);
 }
 
-.business-close-popup {
+.tycoon-close-popup {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 20px;
   cursor: pointer;
 }
-.business-cookie-popup-container {
+.tycoon-cookie-popup-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1142,33 +1139,45 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .business-cookie-popup-container {
+  .tycoon-cookie-popup-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 400px;
   }
 
-  .business-cookie-popup-text-two {
+  .tycoon-cookie-popup-text-two {
     font-family: Poppins;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
   }
 
-  .business-cookie-button-container {
+  .tycoon-cookie-button-container {
     padding: 0;
     margin: auto;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 16px;
+  }
+  .tycoon-cookie-button {
+    width: 182px;
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    vertical-align: middle;
   }
 
-  .business-cookie-popup {
+  .tycoon-cookie-popup {
     position: fixed;
     bottom: 10px;
     width: 1440px;
-    padding: 32px;
+    padding: 20px 32px;
     display: none;
   }
 }
